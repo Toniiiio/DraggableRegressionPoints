@@ -11,7 +11,7 @@ DragableChartOutput <- function(inputId, width = "500px", height = "500px") {
   )
   
   tagList(
-    tags$script(src = "d3.v3.min.js"),
+    includeScript(src = "d3.v3.min.js"),
     
     includeScript("ChartRendering.js"),
     
@@ -46,4 +46,4 @@ renderDragableChart <- function(expr, env = parent.frame(), quoted = FALSE, colo
       col = color
     )
   } 
-}R
+}
